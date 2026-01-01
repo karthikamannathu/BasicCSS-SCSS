@@ -1,0 +1,20 @@
+
+.header{
+    margin-left: 220px;
+    padding: 1rem 2rem;
+    background-color: lighten (v.$primary-color,10%);
+    color: v.$secondary-color;
+
+  @include respond-to(mobile) {
+    margin-left: 60px;
+    padding: 1rem;
+  }
+};
+@for $i from 1 through 10 {
+.opacity-#{$i* 10}{
+    opacity: $i* 0.1;
+}
+}
+
+
+

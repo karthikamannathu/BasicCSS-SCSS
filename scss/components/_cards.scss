@@ -1,0 +1,54 @@
+@function map-deep-get($map,$keys...) {
+    @each $key in $keys {
+        $map: map-get($map,$key)
+
+    }
+    @return $map;
+}
+
+$config:(
+         'small': 8px     
+
+);
+
+
+@function data-get($data,$keys...){
+    @each $key in $keys {
+        $data: map-get($data, $key);
+    }
+   @return $data;
+}
+
+
+$arrys:(
+    'index1':(
+        'index2':(
+            'index3':8px
+        )
+
+    )
+);
+
+
+.cards { 
+margin: data-get($arrys,'index1', 'index2','index3' );
+background: #000;
+}
+
+
+
+$buttons: (
+    ('name':'primary','bg':blue, 'text':white),
+    ('name':'secondary','bg':gray,'text':black)
+);
+
+
+
+@each $button-map in $buttons {
+    .btn-#{map-get($button-map,'name')} {
+        background-color: map-get($button-map,'bg');
+        color: map-get($button-map,'text');
+    }
+}
+
+

@@ -1,0 +1,60 @@
+
+@use "../utils/variables" as v;
+
+@use "../utils/mixins" as *;
+
+
+.sidebar{
+    width: 220px;
+    height: 100vh;
+    background:v.$primary-color;
+    color: v.$secondary-color;
+    padding: 2rem;
+    position: fixed;
+
+
+.log{
+ font-size: 1.8rem;
+ font-weight: bold;
+ margin-bottom: 2rem;
+}
+
+
+
+.nav{
+    list-style: none;
+    padding: 0%;
+
+  li{
+    margin: 1rem 0;
+    a{
+    color: v.$secondary-color;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    &:hover{
+    color:v.$accent-color
+   }
+   }
+
+   }
+ }
+
+
+
+@include respond-to(mobile) {
+width: 60px;
+padding: 1rem;
+.log{
+display: none;
+
+  }
+
+  .nav{
+  font-size: 0;
+   }
+  
+  }
+
+ }
+
