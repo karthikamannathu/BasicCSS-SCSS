@@ -1,0 +1,178 @@
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.main-flex {
+  display: flex;
+  flex-direction: row;
+  min-height: 550px;
+}
+@media (max-width: 425px) {
+  .main-flex {
+    flex-direction: column-reverse;
+    height: 600px;
+  }
+}
+.main-flex .right_div {
+  width: 40%;
+  height: 550px;
+  align-content: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+.main-flex .right_div .noddesk_img > img {
+  width: 40%;
+  height: 30%;
+  padding: 5%;
+}
+@media (max-width: 425px) {
+  .main-flex .right_div .noddesk_img > img {
+    position: absolute;
+    top: 0%;
+    width: 25%;
+    height: 4%;
+  }
+}
+.main-flex .right_div .flex-box-right {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  align-self: center;
+  justify-items: center;
+}
+.main-flex .right_div .flex-box-right .hash-box {
+  width: 60px;
+  height: 100%;
+  background: #d3d0d0;
+}
+@media (max-width: 425px) {
+  .main-flex .right_div .flex-box-right .hash-box {
+    height: 100px;
+    min-width: 50px;
+  }
+}
+.main-flex .right_div .flex-box-right .text-container {
+  margin: 50px 15px;
+  gap: 30px;
+}
+@media (max-width: 425px) {
+  .main-flex .right_div .flex-box-right .text-container {
+    margin: 0px 15px;
+  }
+}
+.main-flex .right_div .flex-box-right .text-container .highlight {
+  font-size: 1rem;
+}
+.main-flex .right_div .flex-box-right .text-container .main-highlight {
+  font-size: 2rem;
+  font-weight: bolder;
+  width: 20px;
+}
+.main-flex .right_div .flex-box-right .text-container .small-text {
+  font-size: small;
+}
+@media (max-width: 425px) {
+  .main-flex .right_div .flex-box-right .text-container .small-text {
+    width: 250px;
+    font-size: medium;
+  }
+}
+.main-flex .left-div {
+  width: 60%;
+  height: 550px;
+  overflow: hidden;
+}
+@media (max-width: 425px) {
+  .main-flex .left-div {
+    width: 100%;
+    margin-left: 10px;
+  }
+}
+.main-flex .left-div .nav {
+  justify-items: right;
+  padding-right: 5%;
+}
+@media (max-width: 425px) {
+  .main-flex .left-div .nav ul {
+    font-size: 10px;
+  }
+}
+.main-flex .left-div .hash-box {
+  background-color: #d3d0d0;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  top: 13%;
+}
+@media (max-width: 425px) {
+  .main-flex .left-div .hash-box {
+    height: 200px;
+    top: 10%;
+  }
+}
+.main-flex .left-div .hash-box .phone-img {
+  position: relative;
+  left: 1%;
+  bottom: 15%;
+  width: 200px;
+  height: 440px;
+  z-index: 0;
+}
+@media (max-width: 425px) {
+  .main-flex .left-div .hash-box .phone-img {
+    height: 220px;
+    width: 110px;
+    bottom: 5px;
+  }
+}
+.main-flex .left-div .hash-box .phone-img .Picture1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 1%;
+  bottom: 1%;
+  z-index: 1;
+}
+.main-flex .left-div .hash-box .phone-img .Picture2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  bottom: 1%;
+}
+.main-flex .left-div .hash-box .phone-img .Picture3 {
+  position: absolute;
+  left: 5%;
+  bottom: 3%;
+  right: 5%;
+  width: 90%;
+  height: 95%;
+  z-index: 3;
+}
+.main-flex .left-div .hash-box .img-flex-box {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  left: 30%;
+  height: 200px;
+  gap: 20px;
+}
+@media (max-width: 425px) {
+  .main-flex .left-div .hash-box .img-flex-box {
+    top: 24%;
+    height: 100px;
+    width: 220px;
+    left: 40%;
+  }
+}
+.main-flex .left-div .hash-box .img-flex-box .box-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
